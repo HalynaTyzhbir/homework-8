@@ -1,0 +1,237 @@
+@font-face {
+    font-family: 'PT Sans';
+    src: url('../fonts/ptsans/PTSans-Regular.woff2') format('woff2'),
+        url('../fonts/ptsans/PTSans-Regular.woff') format('woff');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    src: url('../fonts/ptsans/PTSansBold.woff2') format('woff2'),
+        url('../fonts/ptsans/PTSansBold.woff') format('woff');
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Staatliches';
+    src: url('../fonts/staatliches/staatliches-regular-webfont.woff2') format('woff2'),
+        url('../fonts/staatliches/staatliches-regular-webfont.woff') format('woff');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Tourney';
+    src: url('../fonts/tourney/tourney-semibold-webfont.woff2') format('woff2'),
+        url('../fonts/tourney/tourney-semibold-webfont.woff') format('woff');
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Francois One';
+    src: url('../fonts/francois/francoisone-webfont.woff2') format('woff2'),
+        url('../fonts/francois/francoisone-webfont.woff') format('woff');
+    font-style: normal;
+    font-weight: 400;
+}
+
+* {
+    font-family: 'PT Sans', 'Staatliches', 'Francois One', 'Tourney', 'Arial', 'Helvetica', sans-serif;
+    line-height: 1;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 6px 10px 0;
+}
+
+main {
+    margin-top: 25px;
+}
+
+header,
+.main-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-menu {
+    gap: 10px;
+}
+
+.bread-cramps {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+li:last-child::before {
+    content: '/';
+    padding-right: 2px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.language {
+    font-family: 'Tourney';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 12px;
+    text-transform: uppercase;
+}
+
+.bread-cramps {
+    font-family: 'Staatliches';
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.company-logo {
+    width: 119px;
+    height: 25px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+h2 {
+    font-family: 'Francois One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 3px;
+    padding-bottom: 20px;
+}
+
+p,
+.tex-list {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    padding-bottom: 20px;
+}
+
+.bold-list {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.bg-fon {
+    background-color: #DADADA;
+}
+
+@media only screen and (min-width: 930px) {
+
+    body {
+        margin: 16px 120px 0;
+    }
+
+    .company-logo {
+        width: 238px;
+        height: 50px;
+    }
+
+    main {
+        margin-top: 70px;
+    }
+
+    .main-menu {
+        gap: 50px;
+    }
+
+    .bread-cramps {
+        gap: 5px;
+    }
+
+    li:last-child::before {
+        padding-right: 5px;
+    }
+
+    .language {
+        font-size: 22px;
+        line-height: 18px;
+    }
+
+    .bread-cramps {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    h2 {
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    .title {
+        gap: 10px;
+        padding-bottom: 40px;
+    }
+
+    p,
+    .tex-list {
+        font-size: 28px;
+        line-height: 48px;
+        padding-bottom: 40px;
+    }
+
+    .bold-list {
+        font-size: 28px;
+        line-height: 48px;
+    }
+}
+
+
+aside {
+    position: sticky;
+    top: 0;
+    display: blocks;
+    float: left;
+}
+
+aside {
+    position: sticky;
+    top: 0;
+    display: blocks;
+    float: left;
+}
+
+.sections {
+    padding-left: 5px;
+    margin-left: 115px;
+    margin-top: 40px;
+}
