@@ -272,6 +272,7 @@ p {
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
+
 }
 
 .flip-box:hover .flip-box-inner {
@@ -285,6 +286,9 @@ p {
     height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .flip-box-front {
@@ -296,17 +300,7 @@ p {
     transform: rotateX(180deg);
 }
 
-.flip {
-    padding-top: 45px;
-}
 
-.flip-1 {
-    padding-top: 5px;
-}
-
-.flip-2 {
-    padding-top: 15px;
-}
 
 @media only screen and (min-width: 930px) {
 
